@@ -1,23 +1,22 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
+import { SITE_CREATOR, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { sfPro, inter } from "./fonts";
-import Nav from "@/components/layout/nav";
 import Footer from "@/components/layout/footer";
+import Nav from "@/components/layout/nav";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
-  description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
   twitter: {
     card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
-    description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-    creator: "@steventey",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    creator: SITE_CREATOR,
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL(SITE_URL),
   themeColor: "#FFF",
 };
 
