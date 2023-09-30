@@ -1,4 +1,5 @@
 import Modal from "@/components/shared/modal";
+import { SITE_LOGO, SITE_NAME, SITE_URL } from "@/lib/constants";
 import {
   useState,
   Dispatch,
@@ -19,10 +20,10 @@ const DemoModal = ({
     <Modal showModal={showDemoModal} setShowModal={setShowDemoModal}>
       <div className="w-full overflow-hidden md:max-w-md md:rounded-2xl md:border md:border-gray-100 md:shadow-xl">
         <div className="flex flex-col items-center justify-center space-y-3 bg-white px-4 py-6 pt-8 text-center md:px-16">
-          <a href="https://precedent.dev">
+          <a href={SITE_URL} title={SITE_NAME}>
             <Image
-              src="/logo.png"
-              alt="Precedent Logo"
+              src={SITE_LOGO}
+              alt={SITE_NAME}
               className="h-10 w-10 rounded-full"
               width={20}
               height={20}

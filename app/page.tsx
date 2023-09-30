@@ -30,7 +30,7 @@ export default async function Home() {
         <a
           href="https://twitter.com/steventey/status/1613928948915920896"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
           className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
         >
           <Twitter className="h-5 w-5 text-[#1d9bf0]" />
@@ -132,7 +132,7 @@ const features = [
     description:
       "Jumpstart your next project by deploying Precedent to [Vercel](https://vercel.com/) in one click.",
     demo: (
-      <a href={DEPLOY_URL}>
+      <a href={DEPLOY_URL} title="Deploy">
         <Image
           src="https://vercel.com/button"
           alt="Deploy with Vercel"

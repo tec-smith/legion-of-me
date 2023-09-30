@@ -8,7 +8,7 @@ import Image from "next/image";
 import { Session } from "next-auth";
 
 export default function UserDropdown({ session }: { session: Session }) {
-  const { email, image } = session?.user || {};
+  const { email, image, name } = session?.user || {};
   const [openPopover, setOpenPopover] = useState(false);
 
   if (!email) return null;
@@ -48,6 +48,7 @@ export default function UserDropdown({ session }: { session: Session }) {
         <button
           onClick={() => setOpenPopover(!openPopover)}
           className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border border-gray-300 transition-all duration-75 focus:outline-none active:scale-95 sm:h-9 sm:w-9"
+          title={name || 'Guest' }
         >
           <Image
             alt={email}
