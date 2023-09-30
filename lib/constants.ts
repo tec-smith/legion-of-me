@@ -2,7 +2,7 @@ export const DEPLOY_URL = `https://vercel.com/new/clone?repository-url=https%3A%
 
 // Website Branding
 export const SITE_CREATOR = '@tecsmith_info';
-export const SITE_DESCRIPTION = 'Automate a variety of online tasks.';
+export const SITE_DESCRIPTION = 'Transcend Your Monotony';
 export const SITE_IMAGE = '/preview.png';
 export const SITE_LOGO = '/logo.png';
 export const SITE_NAME = 'Legion of Me';
