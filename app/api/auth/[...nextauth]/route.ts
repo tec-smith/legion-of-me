@@ -11,6 +11,12 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
+  // pages: {
+  //   signOut: '/auth/signout',
+  //   error: '/auth/error', // Error code passed in query string as ?error=
+  //   verifyRequest: '/auth/verify-request', // Used for validating email address
+  //   newUser: '/auth/new-user'
+  // }
 };
 
 const handler = NextAuth(authOptions);
